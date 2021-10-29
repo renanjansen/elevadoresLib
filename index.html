@@ -11,7 +11,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/glide.core.min.css" />
-    <link rel="stylesheet" href="./css/glide.them.min.css" />
+    <link rel="stylesheet" href="./css/glide.theme.min.css" />
+    <link rel="stylesheet" href="./css/principal.css" />
 
     <script>
       new Glide(".glide").mount();
@@ -42,8 +43,9 @@
                         src="./img/Screenshot_2021-10-19-23-48-37-852_com.google.android.apps.docs~2.jpg"
                         class="card-img-top img-responsive"
                         alt="..."
+                        style="min-height: 414.8px"
                       />
-                      <div class="card-body">
+                      <div class="card-body mb-1" style="max-height: 80px">
                         <p class="card-text">
                           Manual de diagnóstico de falhas em Elevadores
                           microprocessados
@@ -53,7 +55,7 @@
                   </div>
                 </li>
                 <li class="glide__slide">
-                  <div class="card bg-body rounded" style="min-height: 62.5vh">
+                  <div class="card bg-body rounded" style="min-height: 69.5vh">
                     <a
                       href="https://drive.google.com/file/d/1VnhAOUu1EmuUL9I9B0pDvagHH6UhdQIO/view?usp=drivesdk"
                       class="text-decoration-none text-reset"
@@ -62,6 +64,7 @@
                         src="./img/Screenshot_2021-10-20-00-39-08-699_com.google.android.apps.docs~2.jpg"
                         class="card-img-top img-responsive"
                         alt="..."
+                        style="min-height: 414.8px"
                       />
                       <div class="card-body">
                         <p class="card-text">Manual Prático Técnico</p>
@@ -70,7 +73,7 @@
                   </div>
                 </li>
                 <li class="glide__slide">
-                  <div class="card bg-body rounded" style="min-height: 62.5vh">
+                  <div class="card bg-body rounded" style="min-height: 69.5vh">
                     <a
                       href="https://drive.google.com/file/d/1WL4QhfBN7hsp-EEzP2w91UdiHQQUbgMZ/view?usp=drivesdk"
                       class="text-decoration-none text-reset"
@@ -79,6 +82,7 @@
                         src="./img/Screenshot_2021-10-20-00-48-57-375_com.google.android.apps.docs~2.jpg"
                         class="card-img-top img-responsive"
                         alt="..."
+                        style="min-height: 414.8px"
                       />
                       <div class="card-body">
                         <p class="card-text">Smart FA/FV Manutenção Revisão</p>
@@ -111,7 +115,14 @@
     <script>
       const config = {
         type: "carousel",
-        perView: 1,
+        perView: 3,
+        focusAt: "center",
+        gap: 30,
+        breakpoints: {
+          600: {
+            perView: 1,
+          },
+        },
       };
       new Glide(".glide", config).mount();
     </script>

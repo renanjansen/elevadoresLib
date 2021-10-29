@@ -1,0 +1,22 @@
+.glide__slide {
+    filter: blur(6px);
+    opacity: .7;
+    transition: .3s linear;
+}
+
+.glide__slide card {
+   width: 100%;
+}
+
+.glide__slide--active {
+
+    opacity: none;
+    filter: none;
+    transform: scale(1.1);
+}
+
+.glide__slides {
+
+    overflow: visible;
+
+}
