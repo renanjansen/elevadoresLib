@@ -13,14 +13,16 @@ crossorigin="anonymous"
 <link rel="stylesheet" href="./css/glide.core.min.css" />
 <link rel="stylesheet" href="./css/glide.theme.min.css" />
 <link rel="stylesheet" href="./css/principal.css" />
-
 <script>
 new Glide(".glide").mount();
 </script>
 
+
+
 <title>Teste lib</title>
 </head>
 <body class="bg-light">
+  <!--inicio nav-->
 <nav class="navbar navbar-light bg-light shadow-lg rounded sticky-top">
 <div class="row p-2">
 <div class="col-4">
@@ -28,29 +30,31 @@ new Glide(".glide").mount();
 </div>
 <div class="col-8">
 <div class="d-flex">
-<input class="form-control me-1" type="search" placeholder="Search" aria-label="Search" id="input">
-<button class="btn btn-outline-success" onclick="buscar()">Search</button>
+  <form>
+    <input class="form-control" list="browsers" name="browser" placeholder="digite para buscar" id="input"/>
+     <button class="btn btn-outline-success" id="send" onclick="seguir()">Search</button>
+    <datalist id="browsers"></datalist>
+  </form>
+
 </div>
 </div>
-
-
 </div>
-
-
 </nav>
-
+  <!--fim nav-->
+  <!--inicio card pdf-->
 <div class="container-fluid text-center bg-light">
 <div class="container text-center p-5">
 <div class="container">
 <div class="glide">
 <div class="glide__track" data-glide-el="track">
-<ul class="glide__slides">
+<ul class="glide__slides" id="myUL">
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded">
-<a
+  <a
 href="https://drive.google.com/file/d/1UQlmVya-YnvaW19uu5OlmuNLXhMlTIfM/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded">
+
 <img
 src="./img/Screenshot_2021-10-19-23-48-37-852_com.google.android.apps.docs~2.jpg"
 class="card-img-top img-responsive"
@@ -63,15 +67,17 @@ Manual de diagnóstico de falhas em Elevadores
 microprocessados
 </p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1VnhAOUu1EmuUL9I9B0pDvagHH6UhdQIO/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/Screenshot_2021-10-20-00-39-08-699_com.google.android.apps.docs~2.jpg"
 class="card-img-top img-responsive"
@@ -81,15 +87,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Manual Prático Técnico</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1WL4QhfBN7hsp-EEzP2w91UdiHQQUbgMZ/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/Screenshot_2021-10-20-00-48-57-375_com.google.android.apps.docs~2.jpg"
 class="card-img-top img-responsive"
@@ -99,15 +107,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Smart FA/FV Manutenção Revisão</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1_AffTFdEqDBnqKjO7iMrCLK7prOVTCYz/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/Screenshot_2021-10-28-23-25-25-107_com.google.android.apps.docs~2.jpg"
 class="card-img-top img-responsive"
@@ -117,15 +127,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">COMANDO AL 2000 VF</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1_Gs1X8qazQLLswbogs53Fj12-Nb_TY0M/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/Screenshot_2021-10-28-23-37-31-322_com.google.android.apps.docs~2.jpg"
 class="card-img-top img-responsive"
@@ -135,15 +147,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Comando Sectron Young VVVF</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1_aLfaUSLVy8J5RpUQdWAlk4f7HQT0sli/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211030_093022.jpg"
 class="card-img-top img-responsive"
@@ -153,15 +167,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Comando Ecxel</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1_bxE859nX0Hk0h7UR-nHDUsPbasAjXbl/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211030_094603.jpg"
 class="card-img-top img-responsive"
@@ -171,15 +187,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Kone TMS50e (pacífico)</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1_fdsORAIke-eSB6BsC7omgZab9LJeVet/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211030_095232.jpg"
 class="card-img-top img-responsive"
@@ -189,15 +207,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Kone</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1_jZaztbpBz4IySA9BjamiifQZHzCqB1H/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211030_095532.jpg"
 class="card-img-top img-responsive"
@@ -207,15 +227,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Comando Genius</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1_lAmy-Qd1jkavRug4ubMkgmqBjrSHXWf/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211030_100534.jpg"
 class="card-img-top img-responsive"
@@ -225,15 +247,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Comando Genius</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1_nEf2LU3igzNEGxo-K510HhPerTBt4fD/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211030_101013.jpg"
 class="card-img-top img-responsive"
@@ -243,15 +267,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Otis esquemas genéricos</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1a7_JJAKR_C5pzPaSEtm-TQQzvAxDAQ5B/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211031_091043.jpg"
 class="card-img-top img-responsive"
@@ -261,15 +287,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">MXBBCC (Atlas e Schindler)</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1auBjxmxx5z6FqXV07eYgvwaEH0TIpzyY/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211102_084903.jpg"
 class="card-img-top img-responsive"
@@ -279,15 +307,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Otis GECB</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1awRxIDTdm94SryhcsTFbn0UqvyEemUfI/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211102_085435.jpg"
 class="card-img-top img-responsive"
@@ -297,15 +327,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Otis ADV DP LCB2</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1axN3Uxx6y1QKRvGo1qXK5u47Kv8gJcr5/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211102_085859.jpg"
 class="card-img-top img-responsive"
@@ -315,15 +347,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Domis Lift D9YO151U</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1b-MSQq5jmvqD84J3olWc2x8HkFUeQ0Fa/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211102_090723.jpg"
 class="card-img-top img-responsive"
@@ -333,15 +367,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Vacon 20</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1b3KW8TTiHw50X0ZsUTco4piA73Jyjaxa/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211102_091350.jpg"
 class="card-img-top img-responsive"
@@ -351,15 +387,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">ThyssenKrupp Manual técnico de referência</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1b3KW8TTiHw50X0ZsUTco4piA73Jyjaxa/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211102_091848.jpg"
 class="card-img-top img-responsive"
@@ -369,15 +407,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">ThyssenKrupp Intercomunicador e Central telefônica</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1bCFaAhzU4Le_7cVB9Z0GV1cbTz7_T0VV/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211102_092246.jpg"
 class="card-img-top img-responsive"
@@ -387,15 +427,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Manual de instalação Montele</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1bKvQfrdb1IwOt_fzWjaYY5qQfDw0eoQ0/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211102_092633.jpg"
 class="card-img-top img-responsive"
@@ -405,15 +447,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Otis MCSS</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1bLfIWVxw3sNzgdaW0Pv32a2kEeUbVOoR/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211102_093407.jpg"
 class="card-img-top img-responsive"
@@ -423,15 +467,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">ThyssenKrupp Catálogo de peças</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1bZFv5EdfFQM-fsPnDpKS2SWO80x_PI4Z/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211102_094233.jpg"
 class="card-img-top img-responsive"
@@ -441,15 +487,17 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Manual Villarta Sjec</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 <li class="glide__slide" class="list">
-<div class="card bg-body rounded" style="min-height: 69.5vh">
-<a
+  <a
 href="https://drive.google.com/file/d/1bZFv5EdfFQM-fsPnDpKS2SWO80x_PI4Z/view?usp=drivesdk"
 class="text-decoration-none text-reset"
 >
+<div class="card bg-body rounded" style="min-height: 69.5vh">
+
 <img
 src="./img/IMG_20211102_094646.jpg"
 class="card-img-top img-responsive"
@@ -459,8 +507,9 @@ style="min-height: 414.8px"
 <div class="card-body">
 <p class="card-text">Otis Manual Gen2 Confirt Serviços</p>
 </div>
-</a>
+
 </div>
+</a>
 </li>
 </ul>
 </div>
@@ -468,6 +517,7 @@ style="min-height: 414.8px"
 </div>
 </div>
 </div>
+  <!--fim card pdf-->
 <footer class="bg-light text-center text-lg-start mt-1 shadow fixed-bottom">
 <!-- Copyright -->
 <div class="text-center p-3">
@@ -499,22 +549,51 @@ const config = {
 };
 new Glide(".glide", config).mount();
 </script>
+
 <script>
 //função que buscará o arquivo na página input ja capturado, falta listar os item para procurar sincretismo com input
-function buscar(){
-  var list = document.querySelectorAll('li');
-  var input = document.getElementById('input').value;
-  var itemList = [];
-  
-  for (var item in list){
+
+var list = document.querySelectorAll('li');
+var itemList = [];
+
+  //captura do tananho do objeto list
+  Object.size = function(list) {
+  var size = 0,
+    key;
+  for (key in list) {
+    if (list.hasOwnProperty(key)) size++;
+  }
+  return size;
+};
+var size = Object.size(list);
+
+//criação datalist condizente ao 'size' do objeto list
+var datalist = document.getElementById('browsers');
+ for(i = 0; i < size; i++){
+    var option = document.createElement('option');
+    option.setAttribute('id', i);
+    option.setAttribute('value',list[i].innerText);
+  datalist.appendChild(option);
     
-    itemList.push(list[item].innerText) ;
     
   }
-  console.log(itemList, input);
   
+  console.log(list[0]);
+function seguir(){
+  
+  let input = document.getElementById("input").value;
+   for(i = 0; i < size; i++){
+     if (input === list[i].innerText){
+    window.open(list[i].firstElementChild.href);
+  }
+   }
+  
+  alert(input)
 }
+  
+
 
 </script>
-<
+
+
 </html>
